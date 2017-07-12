@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B51FB6C1F1366D700AA7761 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B51FB6B1F1366D700AA7761 /* MBProgressHUD.m */; };
+		1B51FB6E1F1366F500AA7761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B51FB6D1F1366F500AA7761 /* Main.storyboard */; };
+		1B51FB721F13671000AA7761 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B51FB6F1F13671000AA7761 /* AddViewController.swift */; };
+		1B51FB731F13671000AA7761 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B51FB701F13671000AA7761 /* DetailViewController.swift */; };
+		1B51FB741F13671000AA7761 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B51FB711F13671000AA7761 /* SetViewController.swift */; };
+		1B51FB761F13671B00AA7761 /* DateBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B51FB751F13671B00AA7761 /* DateBaseManager.swift */; };
+		1B55C4E31F13661600E85917 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B55C4E21F13661600E85917 /* libsqlite3.tbd */; };
+		1B55C4E51F13664300E85917 /* ConvenienceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55C4E41F13664300E85917 /* ConvenienceTool.swift */; };
+		1BA83D951F0F219E005C6B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA83D941F0F219E005C6B84 /* AppDelegate.swift */; };
+		1BA83D971F0F219E005C6B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA83D961F0F219E005C6B84 /* ViewController.swift */; };
+		1BA83D9F1F0F219E005C6B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA83D9D1F0F219E005C6B84 /* LaunchScreen.storyboard */; };
+		1BA83DAA1F0F219E005C6B84 /* PasswordManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA83DA91F0F219E005C6B84 /* PasswordManagerTests.swift */; };
+		1BA83DB51F0F219E005C6B84 /* PasswordManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA83DB41F0F219E005C6B84 /* PasswordManagerUITests.swift */; };
+		1BA83DC81F0F5AAB005C6B84 /* PswTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA83DC71F0F5AAB005C6B84 /* PswTableViewCell.swift */; };
+		1BBC32B61F149B0A00EB7A57 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC32B51F149B0A00EB7A57 /* AccountModel.swift */; };
+		1BBC32B81F149B5B00EB7A57 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC32B71F149B5B00EB7A57 /* PasswordModel.swift */; };
+		1BF1DDC21F1364D500F552EB /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1DDB71F1364D500F552EB /* FMDatabase.m */; };
+		1BF1DDC31F1364D500F552EB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1DDB91F1364D500F552EB /* FMDatabaseAdditions.m */; };
+		1BF1DDC41F1364D500F552EB /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1DDBB1F1364D500F552EB /* FMDatabasePool.m */; };
+		1BF1DDC51F1364D500F552EB /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1DDBD1F1364D500F552EB /* FMDatabaseQueue.m */; };
+		1BF1DDC61F1364D500F552EB /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1DDC01F1364D500F552EB /* FMResultSet.m */; };
+		1BF1DDC71F1364D500F552EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BF1DDC11F1364D500F552EB /* Info.plist */; };
+		1BF744321F16046300669A3D /* AddCompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744311F16046300669A3D /* AddCompanyTableViewCell.swift */; };
+		1BF744341F16047D00669A3D /* AddPswTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744331F16047D00669A3D /* AddPswTableViewCell.swift */; };
+		1BF744361F16048F00669A3D /* AddNewPswTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744351F16048F00669A3D /* AddNewPswTableViewCell.swift */; };
+		1BF7448E1F160D7700669A3D /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7446C1F160D7700669A3D /* IQNSArray+Sort.m */; };
+		1BF7448F1F160D7700669A3D /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7446E1F160D7700669A3D /* IQUIScrollView+Additions.m */; };
+		1BF744901F160D7700669A3D /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744701F160D7700669A3D /* IQUITextFieldView+Additions.m */; };
+		1BF744911F160D7700669A3D /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744721F160D7700669A3D /* IQUIView+Hierarchy.m */; };
+		1BF744921F160D7700669A3D /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744741F160D7700669A3D /* IQUIViewController+Additions.m */; };
+		1BF744931F160D7700669A3D /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744761F160D7700669A3D /* IQUIWindow+Hierarchy.m */; };
+		1BF744941F160D7700669A3D /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7447B1F160D7700669A3D /* IQKeyboardManager.m */; };
+		1BF744951F160D7700669A3D /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7447D1F160D7700669A3D /* IQKeyboardReturnKeyHandler.m */; };
+		1BF744961F160D7700669A3D /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744801F160D7700669A3D /* IQTextView.m */; };
+		1BF744971F160D7700669A3D /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744831F160D7700669A3D /* IQBarButtonItem.m */; };
+		1BF744981F160D7700669A3D /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744851F160D7700669A3D /* IQPreviousNextView.m */; };
+		1BF744991F160D7700669A3D /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744871F160D7700669A3D /* IQTitleBarButtonItem.m */; };
+		1BF7449A1F160D7700669A3D /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF744891F160D7700669A3D /* IQToolbar.m */; };
+		1BF7449B1F160D7700669A3D /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7448B1F160D7700669A3D /* IQUIView+IQKeyboardToolbar.m */; };
+		1BF7449C1F160D7700669A3D /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1BF7448D1F160D7700669A3D /* IQKeyboardManager.bundle */; };
+		1BF7449E1F1611CD00669A3D /* AddAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7449D1F1611CD00669A3D /* AddAccountTableViewCell.swift */; };
+		1BF834C51F13692C00CBD04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF834C41F13692C00CBD04C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BA83DA61F0F219E005C6B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BA83D891F0F219E005C6B84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA83D901F0F219E005C6B84;
+			remoteInfo = PasswordManager;
+		};
+		1BA83DB11F0F219E005C6B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BA83D891F0F219E005C6B84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA83D901F0F219E005C6B84;
+			remoteInfo = PasswordManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B51FB6A1F1366D700AA7761 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1B51FB6B1F1366D700AA7761 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1B51FB6D1F1366F500AA7761 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1B51FB6F1F13671000AA7761 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		1B51FB701F13671000AA7761 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1B51FB711F13671000AA7761 /* SetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
+		1B51FB751F13671B00AA7761 /* DateBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateBaseManager.swift; sourceTree = "<group>"; };
+		1B55C4E21F13661600E85917 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1B55C4E41F13664300E85917 /* ConvenienceTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceTool.swift; sourceTree = "<group>"; };
+		1BA83D911F0F219E005C6B84 /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA83D941F0F219E005C6B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BA83D961F0F219E005C6B84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BA83D9E1F0F219E005C6B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BA83DA01F0F219E005C6B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA83DA51F0F219E005C6B84 /* PasswordManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA83DA91F0F219E005C6B84 /* PasswordManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerTests.swift; sourceTree = "<group>"; };
+		1BA83DAB1F0F219E005C6B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA83DB01F0F219E005C6B84 /* PasswordManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA83DB41F0F219E005C6B84 /* PasswordManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerUITests.swift; sourceTree = "<group>"; };
+		1BA83DB61F0F219E005C6B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA83DC71F0F5AAB005C6B84 /* PswTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PswTableViewCell.swift; sourceTree = "<group>"; };
+		1BBC32B51F149B0A00EB7A57 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		1BBC32B71F149B5B00EB7A57 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModel.swift; sourceTree = "<group>"; };
+		1BF1DD9E1F13619000F552EB /* PasswordManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasswordManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		1BF1DDB61F1364D500F552EB /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		1BF1DDB71F1364D500F552EB /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		1BF1DDB81F1364D500F552EB /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		1BF1DDB91F1364D500F552EB /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		1BF1DDBA1F1364D500F552EB /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		1BF1DDBB1F1364D500F552EB /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		1BF1DDBC1F1364D500F552EB /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		1BF1DDBD1F1364D500F552EB /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		1BF1DDBE1F1364D500F552EB /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		1BF1DDBF1F1364D500F552EB /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		1BF1DDC01F1364D500F552EB /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		1BF1DDC11F1364D500F552EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF744311F16046300669A3D /* AddCompanyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCompanyTableViewCell.swift; sourceTree = "<group>"; };
+		1BF744331F16047D00669A3D /* AddPswTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPswTableViewCell.swift; sourceTree = "<group>"; };
+		1BF744351F16048F00669A3D /* AddNewPswTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPswTableViewCell.swift; sourceTree = "<group>"; };
+		1BF7446B1F160D7700669A3D /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		1BF7446C1F160D7700669A3D /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		1BF7446D1F160D7700669A3D /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		1BF7446E1F160D7700669A3D /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		1BF7446F1F160D7700669A3D /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		1BF744701F160D7700669A3D /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		1BF744711F160D7700669A3D /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		1BF744721F160D7700669A3D /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		1BF744731F160D7700669A3D /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		1BF744741F160D7700669A3D /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		1BF744751F160D7700669A3D /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		1BF744761F160D7700669A3D /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		1BF744781F160D7700669A3D /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		1BF744791F160D7700669A3D /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		1BF7447A1F160D7700669A3D /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		1BF7447B1F160D7700669A3D /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		1BF7447C1F160D7700669A3D /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		1BF7447D1F160D7700669A3D /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		1BF7447F1F160D7700669A3D /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		1BF744801F160D7700669A3D /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		1BF744821F160D7700669A3D /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		1BF744831F160D7700669A3D /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		1BF744841F160D7700669A3D /* IQPreviousNextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPreviousNextView.h; sourceTree = "<group>"; };
+		1BF744851F160D7700669A3D /* IQPreviousNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPreviousNextView.m; sourceTree = "<group>"; };
+		1BF744861F160D7700669A3D /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		1BF744871F160D7700669A3D /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		1BF744881F160D7700669A3D /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		1BF744891F160D7700669A3D /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		1BF7448A1F160D7700669A3D /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		1BF7448B1F160D7700669A3D /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		1BF7448D1F160D7700669A3D /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		1BF7449D1F1611CD00669A3D /* AddAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountTableViewCell.swift; sourceTree = "<group>"; };
+		1BF834C41F13692C00CBD04C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BA83D8E1F0F219E005C6B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B55C4E31F13661600E85917 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA83DA21F0F219E005C6B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA83DAD1F0F219E005C6B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA83D881F0F219E005C6B84 = {
+			isa = PBXGroup;
+			children = (
+				1BA83D931F0F219E005C6B84 /* PasswordManager */,
+				1BA83DA81F0F219E005C6B84 /* PasswordManagerTests */,
+				1BA83DB31F0F219E005C6B84 /* PasswordManagerUITests */,
+				1BA83D921F0F219E005C6B84 /* Products */,
+				1BF1DDC81F13656E00F552EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1BA83D921F0F219E005C6B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BA83D911F0F219E005C6B84 /* PasswordManager.app */,
+				1BA83DA51F0F219E005C6B84 /* PasswordManagerTests.xctest */,
+				1BA83DB01F0F219E005C6B84 /* PasswordManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BA83D931F0F219E005C6B84 /* PasswordManager */ = {
+			isa = PBXGroup;
+			children = (
+				1BA83DC61F0F5A6A005C6B84 /* 3Party */,
+				1BA83DC51F0F5A4F005C6B84 /* Serviece */,
+				1BA83DC41F0F5A2C005C6B84 /* Model */,
+				1BA83DC31F0F5A21005C6B84 /* Controller */,
+				1BA83D941F0F219E005C6B84 /* AppDelegate.swift */,
+				1BA83DC21F0F5A1B005C6B84 /* View */,
+				1BF834C41F13692C00CBD04C /* Assets.xcassets */,
+				1B51FB6D1F1366F500AA7761 /* Main.storyboard */,
+				1BA83D9D1F0F219E005C6B84 /* LaunchScreen.storyboard */,
+				1BA83DA01F0F219E005C6B84 /* Info.plist */,
+				1BF1DD9E1F13619000F552EB /* PasswordManager-Bridging-Header.h */,
+			);
+			path = PasswordManager;
+			sourceTree = "<group>";
+		};
+		1BA83DA81F0F219E005C6B84 /* PasswordManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BA83DA91F0F219E005C6B84 /* PasswordManagerTests.swift */,
+				1BA83DAB1F0F219E005C6B84 /* Info.plist */,
+			);
+			path = PasswordManagerTests;
+			sourceTree = "<group>";
+		};
+		1BA83DB31F0F219E005C6B84 /* PasswordManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BA83DB41F0F219E005C6B84 /* PasswordManagerUITests.swift */,
+				1BA83DB61F0F219E005C6B84 /* Info.plist */,
+			);
+			path = PasswordManagerUITests;
+			sourceTree = "<group>";
+		};
+		1BA83DC21F0F5A1B005C6B84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BA83DC71F0F5AAB005C6B84 /* PswTableViewCell.swift */,
+				1BF744311F16046300669A3D /* AddCompanyTableViewCell.swift */,
+				1BF744331F16047D00669A3D /* AddPswTableViewCell.swift */,
+				1BF744351F16048F00669A3D /* AddNewPswTableViewCell.swift */,
+				1BF7449D1F1611CD00669A3D /* AddAccountTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1BA83DC31F0F5A21005C6B84 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BA83D961F0F219E005C6B84 /* ViewController.swift */,
+				1B51FB6F1F13671000AA7761 /* AddViewController.swift */,
+				1B51FB701F13671000AA7761 /* DetailViewController.swift */,
+				1B51FB711F13671000AA7761 /* SetViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1BA83DC41F0F5A2C005C6B84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC32B51F149B0A00EB7A57 /* AccountModel.swift */,
+				1BBC32B71F149B5B00EB7A57 /* PasswordModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1BA83DC51F0F5A4F005C6B84 /* Serviece */ = {
+			isa = PBXGroup;
+			children = (
+				1B51FB751F13671B00AA7761 /* DateBaseManager.swift */,
+			);
+			name = Serviece;
+			sourceTree = "<group>";
+		};
+		1BA83DC61F0F5A6A005C6B84 /* 3Party */ = {
+			isa = PBXGroup;
+			children = (
+				1BF744691F160D7700669A3D /* IQKeyboardManager */,
+				1B55C4E41F13664300E85917 /* ConvenienceTool.swift */,
+				1BF1DDB51F1364D500F552EB /* FMDB */,
+				1BF1DD9D1F13617400F552EB /* MBProgressHUD */,
+			);
+			name = 3Party;
+			sourceTree = "<group>";
+		};
+		1BF1DD9D1F13617400F552EB /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1B51FB6A1F1366D700AA7761 /* MBProgressHUD.h */,
+				1B51FB6B1F1366D700AA7761 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		1BF1DDB51F1364D500F552EB /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				1BF1DDB61F1364D500F552EB /* FMDatabase.h */,
+				1BF1DDB71F1364D500F552EB /* FMDatabase.m */,
+				1BF1DDB81F1364D500F552EB /* FMDatabaseAdditions.h */,
+				1BF1DDB91F1364D500F552EB /* FMDatabaseAdditions.m */,
+				1BF1DDBA1F1364D500F552EB /* FMDatabasePool.h */,
+				1BF1DDBB1F1364D500F552EB /* FMDatabasePool.m */,
+				1BF1DDBC1F1364D500F552EB /* FMDatabaseQueue.h */,
+				1BF1DDBD1F1364D500F552EB /* FMDatabaseQueue.m */,
+				1BF1DDBE1F1364D500F552EB /* FMDB.h */,
+				1BF1DDBF1F1364D500F552EB /* FMResultSet.h */,
+				1BF1DDC01F1364D500F552EB /* FMResultSet.m */,
+				1BF1DDC11F1364D500F552EB /* Info.plist */,
+			);
+			name = FMDB;
+			path = "../../../../../Downloads/fmdb-master/src/fmdb";
+			sourceTree = "<group>";
+		};
+		1BF1DDC81F13656E00F552EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B55C4E21F13661600E85917 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BF744691F160D7700669A3D /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				1BF7446A1F160D7700669A3D /* Categories */,
+				1BF744771F160D7700669A3D /* Constants */,
+				1BF7447A1F160D7700669A3D /* IQKeyboardManager.h */,
+				1BF7447B1F160D7700669A3D /* IQKeyboardManager.m */,
+				1BF7447C1F160D7700669A3D /* IQKeyboardReturnKeyHandler.h */,
+				1BF7447D1F160D7700669A3D /* IQKeyboardReturnKeyHandler.m */,
+				1BF7447E1F160D7700669A3D /* IQTextView */,
+				1BF744811F160D7700669A3D /* IQToolbar */,
+				1BF7448C1F160D7700669A3D /* Resources */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		1BF7446A1F160D7700669A3D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1BF7446B1F160D7700669A3D /* IQNSArray+Sort.h */,
+				1BF7446C1F160D7700669A3D /* IQNSArray+Sort.m */,
+				1BF7446D1F160D7700669A3D /* IQUIScrollView+Additions.h */,
+				1BF7446E1F160D7700669A3D /* IQUIScrollView+Additions.m */,
+				1BF7446F1F160D7700669A3D /* IQUITextFieldView+Additions.h */,
+				1BF744701F160D7700669A3D /* IQUITextFieldView+Additions.m */,
+				1BF744711F160D7700669A3D /* IQUIView+Hierarchy.h */,
+				1BF744721F160D7700669A3D /* IQUIView+Hierarchy.m */,
+				1BF744731F160D7700669A3D /* IQUIViewController+Additions.h */,
+				1BF744741F160D7700669A3D /* IQUIViewController+Additions.m */,
+				1BF744751F160D7700669A3D /* IQUIWindow+Hierarchy.h */,
+				1BF744761F160D7700669A3D /* IQUIWindow+Hierarchy.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		1BF744771F160D7700669A3D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1BF744781F160D7700669A3D /* IQKeyboardManagerConstants.h */,
+				1BF744791F160D7700669A3D /* IQKeyboardManagerConstantsInternal.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1BF7447E1F160D7700669A3D /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				1BF7447F1F160D7700669A3D /* IQTextView.h */,
+				1BF744801F160D7700669A3D /* IQTextView.m */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		1BF744811F160D7700669A3D /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				1BF744821F160D7700669A3D /* IQBarButtonItem.h */,
+				1BF744831F160D7700669A3D /* IQBarButtonItem.m */,
+				1BF744841F160D7700669A3D /* IQPreviousNextView.h */,
+				1BF744851F160D7700669A3D /* IQPreviousNextView.m */,
+				1BF744861F160D7700669A3D /* IQTitleBarButtonItem.h */,
+				1BF744871F160D7700669A3D /* IQTitleBarButtonItem.m */,
+				1BF744881F160D7700669A3D /* IQToolbar.h */,
+				1BF744891F160D7700669A3D /* IQToolbar.m */,
+				1BF7448A1F160D7700669A3D /* IQUIView+IQKeyboardToolbar.h */,
+				1BF7448B1F160D7700669A3D /* IQUIView+IQKeyboardToolbar.m */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		1BF7448C1F160D7700669A3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1BF7448D1F160D7700669A3D /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BA83D901F0F219E005C6B84 /* PasswordManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA83DB91F0F219E005C6B84 /* Build configuration list for PBXNativeTarget "PasswordManager" */;
+			buildPhases = (
+				1BA83D8D1F0F219E005C6B84 /* Sources */,
+				1BA83D8E1F0F219E005C6B84 /* Frameworks */,
+				1BA83D8F1F0F219E005C6B84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordManager;
+			productName = PasswordManager;
+			productReference = 1BA83D911F0F219E005C6B84 /* PasswordManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BA83DA41F0F219E005C6B84 /* PasswordManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA83DBC1F0F219E005C6B84 /* Build configuration list for PBXNativeTarget "PasswordManagerTests" */;
+			buildPhases = (
+				1BA83DA11F0F219E005C6B84 /* Sources */,
+				1BA83DA21F0F219E005C6B84 /* Frameworks */,
+				1BA83DA31F0F219E005C6B84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BA83DA71F0F219E005C6B84 /* PBXTargetDependency */,
+			);
+			name = PasswordManagerTests;
+			productName = PasswordManagerTests;
+			productReference = 1BA83DA51F0F219E005C6B84 /* PasswordManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BA83DAF1F0F219E005C6B84 /* PasswordManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA83DBF1F0F219E005C6B84 /* Build configuration list for PBXNativeTarget "PasswordManagerUITests" */;
+			buildPhases = (
+				1BA83DAC1F0F219E005C6B84 /* Sources */,
+				1BA83DAD1F0F219E005C6B84 /* Frameworks */,
+				1BA83DAE1F0F219E005C6B84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BA83DB21F0F219E005C6B84 /* PBXTargetDependency */,
+			);
+			name = PasswordManagerUITests;
+			productName = PasswordManagerUITests;
+			productReference = 1BA83DB01F0F219E005C6B84 /* PasswordManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BA83D891F0F219E005C6B84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = besttone;
+				TargetAttributes = {
+					1BA83D901F0F219E005C6B84 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PD6H97QKA5;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					1BA83DA41F0F219E005C6B84 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PD6H97QKA5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1BA83D901F0F219E005C6B84;
+					};
+					1BA83DAF1F0F219E005C6B84 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PD6H97QKA5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1BA83D901F0F219E005C6B84;
+					};
+				};
+			};
+			buildConfigurationList = 1BA83D8C1F0F219E005C6B84 /* Build configuration list for PBXProject "PasswordManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BA83D881F0F219E005C6B84;
+			productRefGroup = 1BA83D921F0F219E005C6B84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BA83D901F0F219E005C6B84 /* PasswordManager */,
+				1BA83DA41F0F219E005C6B84 /* PasswordManagerTests */,
+				1BA83DAF1F0F219E005C6B84 /* PasswordManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BA83D8F1F0F219E005C6B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF7449C1F160D7700669A3D /* IQKeyboardManager.bundle in Resources */,
+				1BF1DDC71F1364D500F552EB /* Info.plist in Resources */,
+				1BA83D9F1F0F219E005C6B84 /* LaunchScreen.storyboard in Resources */,
+				1BF834C51F13692C00CBD04C /* Assets.xcassets in Resources */,
+				1B51FB6E1F1366F500AA7761 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA83DA31F0F219E005C6B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA83DAE1F0F219E005C6B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BA83D8D1F0F219E005C6B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BF744901F160D7700669A3D /* IQUITextFieldView+Additions.m in Sources */,
+				1B51FB731F13671000AA7761 /* DetailViewController.swift in Sources */,
+				1BF1DDC41F1364D500F552EB /* FMDatabasePool.m in Sources */,
+				1BBC32B81F149B5B00EB7A57 /* PasswordModel.swift in Sources */,
+				1BF744341F16047D00669A3D /* AddPswTableViewCell.swift in Sources */,
+				1BF7448E1F160D7700669A3D /* IQNSArray+Sort.m in Sources */,
+				1BF1DDC61F1364D500F552EB /* FMResultSet.m in Sources */,
+				1BF744911F160D7700669A3D /* IQUIView+Hierarchy.m in Sources */,
+				1BF744981F160D7700669A3D /* IQPreviousNextView.m in Sources */,
+				1BF744361F16048F00669A3D /* AddNewPswTableViewCell.swift in Sources */,
+				1B51FB721F13671000AA7761 /* AddViewController.swift in Sources */,
+				1BF744941F160D7700669A3D /* IQKeyboardManager.m in Sources */,
+				1BF744971F160D7700669A3D /* IQBarButtonItem.m in Sources */,
+				1BF7449E1F1611CD00669A3D /* AddAccountTableViewCell.swift in Sources */,
+				1BF744921F160D7700669A3D /* IQUIViewController+Additions.m in Sources */,
+				1BF744321F16046300669A3D /* AddCompanyTableViewCell.swift in Sources */,
+				1BF744961F160D7700669A3D /* IQTextView.m in Sources */,
+				1BF744951F160D7700669A3D /* IQKeyboardReturnKeyHandler.m in Sources */,
+				1BF1DDC51F1364D500F552EB /* FMDatabaseQueue.m in Sources */,
+				1BF1DDC21F1364D500F552EB /* FMDatabase.m in Sources */,
+				1BF7449A1F160D7700669A3D /* IQToolbar.m in Sources */,
+				1BA83D971F0F219E005C6B84 /* ViewController.swift in Sources */,
+				1BA83DC81F0F5AAB005C6B84 /* PswTableViewCell.swift in Sources */,
+				1BF1DDC31F1364D500F552EB /* FMDatabaseAdditions.m in Sources */,
+				1BF744931F160D7700669A3D /* IQUIWindow+Hierarchy.m in Sources */,
+				1BF744991F160D7700669A3D /* IQTitleBarButtonItem.m in Sources */,
+				1BF7449B1F160D7700669A3D /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				1BA83D951F0F219E005C6B84 /* AppDelegate.swift in Sources */,
+				1BBC32B61F149B0A00EB7A57 /* AccountModel.swift in Sources */,
+				1BF7448F1F160D7700669A3D /* IQUIScrollView+Additions.m in Sources */,
+				1B51FB741F13671000AA7761 /* SetViewController.swift in Sources */,
+				1B55C4E51F13664300E85917 /* ConvenienceTool.swift in Sources */,
+				1B51FB761F13671B00AA7761 /* DateBaseManager.swift in Sources */,
+				1B51FB6C1F1366D700AA7761 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA83DA11F0F219E005C6B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA83DAA1F0F219E005C6B84 /* PasswordManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA83DAC1F0F219E005C6B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA83DB51F0F219E005C6B84 /* PasswordManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BA83DA71F0F219E005C6B84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA83D901F0F219E005C6B84 /* PasswordManager */;
+			targetProxy = 1BA83DA61F0F219E005C6B84 /* PBXContainerItemProxy */;
+		};
+		1BA83DB21F0F219E005C6B84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA83D901F0F219E005C6B84 /* PasswordManager */;
+			targetProxy = 1BA83DB11F0F219E005C6B84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BA83D9D1F0F219E005C6B84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BA83D9E1F0F219E005C6B84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BA83DB71F0F219E005C6B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BA83DB81F0F219E005C6B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BA83DBA1F0F219E005C6B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PD6H97QKA5;
+				INFOPLIST_FILE = PasswordManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.PasswordManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PasswordManager/PasswordManager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1BA83DBB1F0F219E005C6B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = PD6H97QKA5;
+				INFOPLIST_FILE = PasswordManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.PasswordManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PasswordManager/PasswordManager-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1BA83DBD1F0F219E005C6B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PD6H97QKA5;
+				INFOPLIST_FILE = PasswordManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.PasswordManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordManager.app/PasswordManager";
+			};
+			name = Debug;
+		};
+		1BA83DBE1F0F219E005C6B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PD6H97QKA5;
+				INFOPLIST_FILE = PasswordManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.PasswordManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordManager.app/PasswordManager";
+			};
+			name = Release;
+		};
+		1BA83DC01F0F219E005C6B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PD6H97QKA5;
+				INFOPLIST_FILE = PasswordManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.PasswordManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PasswordManager;
+			};
+			name = Debug;
+		};
+		1BA83DC11F0F219E005C6B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PD6H97QKA5;
+				INFOPLIST_FILE = PasswordManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.besttone.PasswordManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PasswordManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BA83D8C1F0F219E005C6B84 /* Build configuration list for PBXProject "PasswordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA83DB71F0F219E005C6B84 /* Debug */,
+				1BA83DB81F0F219E005C6B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA83DB91F0F219E005C6B84 /* Build configuration list for PBXNativeTarget "PasswordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA83DBA1F0F219E005C6B84 /* Debug */,
+				1BA83DBB1F0F219E005C6B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA83DBC1F0F219E005C6B84 /* Build configuration list for PBXNativeTarget "PasswordManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA83DBD1F0F219E005C6B84 /* Debug */,
+				1BA83DBE1F0F219E005C6B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA83DBF1F0F219E005C6B84 /* Build configuration list for PBXNativeTarget "PasswordManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA83DC01F0F219E005C6B84 /* Debug */,
+				1BA83DC11F0F219E005C6B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BA83D891F0F219E005C6B84 /* Project object */;
+}
