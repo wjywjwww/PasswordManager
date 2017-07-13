@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4AF7A51F17080500B96A26 /* UINavigationController+SwipeBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4AF7A21F17080500B96A26 /* UINavigationController+SwipeBack.m */; };
+		1B4AF7A61F17080500B96A26 /* UIViewController+SwipeBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4AF7A41F17080500B96A26 /* UIViewController+SwipeBack.m */; };
 		1B51FB6C1F1366D700AA7761 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B51FB6B1F1366D700AA7761 /* MBProgressHUD.m */; };
 		1B51FB6E1F1366F500AA7761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B51FB6D1F1366F500AA7761 /* Main.storyboard */; };
 		1B51FB721F13671000AA7761 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B51FB6F1F13671000AA7761 /* AddViewController.swift */; };
@@ -69,6 +71,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B4AF7A01F17080500B96A26 /* SwipeBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeBack.h; sourceTree = "<group>"; };
+		1B4AF7A11F17080500B96A26 /* UINavigationController+SwipeBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SwipeBack.h"; sourceTree = "<group>"; };
+		1B4AF7A21F17080500B96A26 /* UINavigationController+SwipeBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SwipeBack.m"; sourceTree = "<group>"; };
+		1B4AF7A31F17080500B96A26 /* UIViewController+SwipeBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SwipeBack.h"; sourceTree = "<group>"; };
+		1B4AF7A41F17080500B96A26 /* UIViewController+SwipeBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SwipeBack.m"; sourceTree = "<group>"; };
 		1B51FB6A1F1366D700AA7761 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		1B51FB6B1F1366D700AA7761 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		1B51FB6D1F1366F500AA7761 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -169,6 +176,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4AF79F1F17080500B96A26 /* SwipeBack */ = {
+			isa = PBXGroup;
+			children = (
+				1B4AF7A01F17080500B96A26 /* SwipeBack.h */,
+				1B4AF7A11F17080500B96A26 /* UINavigationController+SwipeBack.h */,
+				1B4AF7A21F17080500B96A26 /* UINavigationController+SwipeBack.m */,
+				1B4AF7A31F17080500B96A26 /* UIViewController+SwipeBack.h */,
+				1B4AF7A41F17080500B96A26 /* UIViewController+SwipeBack.m */,
+			);
+			path = SwipeBack;
+			sourceTree = "<group>";
+		};
 		1BA83D881F0F219E005C6B84 = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +288,7 @@
 		1BA83DC61F0F5A6A005C6B84 /* 3Party */ = {
 			isa = PBXGroup;
 			children = (
+				1B4AF79F1F17080500B96A26 /* SwipeBack */,
 				1BF744691F160D7700669A3D /* IQKeyboardManager */,
 				1B55C4E41F13664300E85917 /* ConvenienceTool.swift */,
 				1BF1DDB51F1364D500F552EB /* FMDB */,
@@ -552,6 +572,7 @@
 				1BF744951F160D7700669A3D /* IQKeyboardReturnKeyHandler.m in Sources */,
 				1BF1DDC51F1364D500F552EB /* FMDatabaseQueue.m in Sources */,
 				1BF1DDC21F1364D500F552EB /* FMDatabase.m in Sources */,
+				1B4AF7A61F17080500B96A26 /* UIViewController+SwipeBack.m in Sources */,
 				1BF7449A1F160D7700669A3D /* IQToolbar.m in Sources */,
 				1BA83D971F0F219E005C6B84 /* ViewController.swift in Sources */,
 				1BA83DC81F0F5AAB005C6B84 /* PswTableViewCell.swift in Sources */,
@@ -565,6 +586,7 @@
 				1B51FB741F13671000AA7761 /* SetViewController.swift in Sources */,
 				1B55C4E51F13664300E85917 /* ConvenienceTool.swift in Sources */,
 				1B51FB761F13671B00AA7761 /* DateBaseManager.swift in Sources */,
+				1B4AF7A51F17080500B96A26 /* UINavigationController+SwipeBack.m in Sources */,
 				1B51FB6C1F1366D700AA7761 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

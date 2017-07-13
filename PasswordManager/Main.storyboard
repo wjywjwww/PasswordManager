@@ -371,7 +371,10 @@
                             <constraint firstItem="TGF-1e-Cc9" firstAttribute="leading" secondItem="vHS-a8-oql" secondAttribute="leading" id="ry9-DP-vqC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="新增密码" id="rgZ-lm-nZZ"/>
+                    <navigationItem key="navigationItem" title="新增密码" id="rgZ-lm-nZZ">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="H9J-yf-kS5"/>
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="57k-Nm-PBy"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="newPswTable" destination="TGF-1e-Cc9" id="x3Q-ar-PWx"/>
                     </connections>

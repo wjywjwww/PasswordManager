@@ -8,10 +8,11 @@
 
 import UIKit
 
-class AddPswTableViewCell: UITableViewCell {
+class AddPswTableViewCell: UITableViewCell,UITextFieldDelegate {
 
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var pswTypeBtn: UIButton!
+    var passwordModel : PasswordModel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +20,7 @@ class AddPswTableViewCell: UITableViewCell {
         pswTypeBtn.layer.borderWidth = 0.5
         pswTypeBtn.layer.borderColor = ConvenienceTool.colorFromRGBA(red: 100, green: 100, blue: 100, alpha: 1).cgColor
         pswTypeBtn.layer.cornerRadius = 5
+        passwordTF.delegate = self
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,5 +28,7 @@ class AddPswTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        passwordModel.password = textField.text ?? ""
+    }
 }

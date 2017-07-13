@@ -4,3 +4,4 @@
 #import "MBProgressHUD.h"
 #import "FMDB.h"
 #import "IQKeyboardManager.h"
+#import "SwipeBack.h"
