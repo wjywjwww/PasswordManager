@@ -13,6 +13,7 @@ class PasswordModel: NSObject {
     var password : String = ""
     var passwordName : String = ""
     var company : String = ""
+    var pswType : String = ""
     init(with account : String = "" , password : String = "" ,  passwordName : String = "" , company : String = ""){
         super.init()
         self.account = account
